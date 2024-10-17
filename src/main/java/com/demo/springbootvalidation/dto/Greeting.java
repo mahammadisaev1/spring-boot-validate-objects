@@ -9,15 +9,12 @@ import lombok.Setter;
 @Setter
 public class Greeting {
 
-    @NotNull(message = "the message should not be null")
-    @NotEmpty(message = "the message should not be empty")
+    @NotEmpty(message = "the message should not be empty or null")
     private String message;
 
-    @NotNull(message = "the from should not be null")
-    @NotEmpty(message = "the from should not be empty")
+    @NotEmpty(message = "the from should not be empty or null")
     private String from;
 
-    @NotNull(message = "the to should not be null")
-    @NotEmpty(message = "the to should not be empty")
+    @NotEmpty(message = "the to should not be empty or null")
     private String to;
 }
